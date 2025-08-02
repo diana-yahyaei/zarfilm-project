@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.note {
+  text-align: center;
+  width: 90%;
+  color: #fff;
+  padding-top: 10px;
+  background-color: red;
+  border-radius: 20px;
+  height: 7vh;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  background-color: blue;
+  border-radius: 15px;
+  height: 80vh;
+  align-items: center;
+}
+.helicopter,
+#vip,
+#ship,
+.submarine {
+  height: 80%;
+  width: 20vw;
+  border: 2px black;
+  border-radius: 10px;
+  background-color: aqua;
+}
+#ship {
+  height: 70%;
+}
+#vip {
+  position: relative;
+
+  display: flex;
+  justify-items: center;
+
+  align-items: center;
+}
+.suggest {
+  justify-content: center;
+  padding-top: 10px;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  bottom: 95%;
+  text-align: center;
+  background-color: blueviolet;
+  border-radius: 30px;
+  height: 40px;
+  width: 40%;
+}
