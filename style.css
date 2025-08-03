@@ -3,7 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: yekan;
+  src: url("font/BYekan+.ttf") format("truetype");
+}
 
+body {
+  font-weight: 600;
+}
 #container {
   display: flex;
   flex-direction: column;
@@ -15,7 +22,7 @@
   width: 90%;
   color: #fff;
   padding-top: 10px;
-  background-color: red;
+  background-color: #910909;
   border-radius: 20px;
   height: 7vh;
 }
@@ -23,7 +30,8 @@
   display: flex;
   justify-content: space-evenly;
   width: 90%;
-  background-color: blue;
+  background-color: rgba(29, 34, 45);
+
   border-radius: 20px;
   height: 80vh;
   align-items: center;
@@ -34,21 +42,24 @@
 .submarine {
   height: 80%;
   width: 20vw;
-  border: 2px black;
+  border: 1px #eb8307;
   border-radius: 20px;
-  background-color: rgb(216, 156, 156);
-}
-#ship {
-  height: 70%;
-}
-#vip {
-  position: relative;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
-
+#ship {
+  height: 70%;
+  gap: 15px;
+}
+#vip {
+  position: relative;
+}
+#icon-one {
+  margin-top: 40px;
+}
 .suggest {
   justify-content: center;
   padding-top: 10px;
@@ -57,23 +68,33 @@
   left: 30%;
   bottom: 95%;
   text-align: center;
-  background-color: blueviolet;
+  background-color: #eb8307;
   border-radius: 30px;
   height: 40px;
   width: 40%;
+  color: #fff;
 }
 /*svg {
   overflow: hidden;
   vertical-align: middle;
 }*/
-.icon {
+.icon,
+#icon-one,
+#icon {
   height: 30%;
   margin-top: 40px;
   width: 40%;
   background-color: aqua;
 }
+#icon {
+  margin-top: 60px;
+  height: 35%;
+}
+small {
+  color: gray;
+}
 .time {
-  background-color: blue;
+  background-color: rgb(21, 25, 34);
   border-radius: 30px;
   height: 35px;
   width: 60px;
@@ -85,11 +106,15 @@
   display: flex;
   gap: 5px;
 }
+.four {
+  width: 70px;
+}
 .last-price {
   display: inline-block;
   position: relative;
   padding: 0 10px;
   font-size: 20px;
+  color: #fff;
 }
 .last-price::before {
   content: "";
@@ -102,8 +127,12 @@
   width: 2px;
   background-color: #fff;
 }
+.num {
+  color: #eb8307;
+}
 .new-price {
   display: flex;
+
   width: 80%;
   height: 10%;
   font-size: x-large;
@@ -113,14 +142,28 @@
   text-align: center;
   gap: 10px;
 }
-.buy {
+.buy,
+#buy {
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 15px;
-  background-color: brown;
-  color: #fff;
+
+  color: #eb8307;
   width: 85%;
   height: 13%;
   border-radius: 15px;
+  border: 2px solid #eb8307;
+}
+.buy:hover {
+  background-color: #eb8307;
+  color: #fff;
+}
+#buy {
+  background-color: #eb8307;
+  color: #fff;
+}
+#buy:hover {
+  color: #eb8307;
+  background-color: black;
 }
