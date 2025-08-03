@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #container {
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
   justify-content: space-evenly;
   width: 90%;
   background-color: blue;
-  border-radius: 15px;
+  border-radius: 20px;
   height: 80vh;
   align-items: center;
 }
@@ -34,20 +35,20 @@
   height: 80%;
   width: 20vw;
   border: 2px black;
-  border-radius: 10px;
-  background-color: aqua;
+  border-radius: 20px;
+  background-color: rgb(216, 156, 156);
 }
 #ship {
   height: 70%;
 }
 #vip {
   position: relative;
-
   display: flex;
-  justify-items: center;
-
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
+
 .suggest {
   justify-content: center;
   padding-top: 10px;
@@ -60,4 +61,66 @@
   border-radius: 30px;
   height: 40px;
   width: 40%;
+}
+/*svg {
+  overflow: hidden;
+  vertical-align: middle;
+}*/
+.icon {
+  height: 30%;
+  margin-top: 40px;
+  width: 40%;
+  background-color: aqua;
+}
+.time {
+  background-color: blue;
+  border-radius: 30px;
+  height: 35px;
+  width: 60px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+.last-price {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  font-size: 20px;
+}
+.last-price::before {
+  content: "";
+  position: absolute;
+
+  left: 40px;
+  top: -20px;
+  transform: rotate(75deg);
+  height: 60px;
+  width: 2px;
+  background-color: #fff;
+}
+.new-price {
+  display: flex;
+  width: 80%;
+  height: 10%;
+  font-size: x-large;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.buy {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: brown;
+  color: #fff;
+  width: 85%;
+  height: 13%;
+  border-radius: 15px;
 }
