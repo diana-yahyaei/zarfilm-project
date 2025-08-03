@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
+/*@font-face {
   font-family: yekan;
   src: url("font/BYekan+.ttf") format("truetype");
-}
+}*/
 
 body {
-  font-weight: 600;
+  font-family: sans-serif;
+  background-color: black;
 }
 #container {
   display: flex;
@@ -81,25 +82,29 @@ body {
 .icon,
 #icon-one,
 #icon {
-  height: 30%;
+  height: 25%;
   margin-top: 40px;
   width: 40%;
-  background-color: aqua;
 }
 #icon {
   margin-top: 60px;
-  height: 35%;
+  height: 30%;
 }
 small {
   color: gray;
+  font-size: 15px;
+}
+strong {
+  color: #eb8307;
 }
 .time {
   background-color: rgb(21, 25, 34);
   border-radius: 30px;
-  height: 35px;
-  width: 60px;
+  height: 40px;
+  width: 80px;
   color: white;
   font-size: 20px;
+  padding-bottom: 5px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -107,35 +112,35 @@ small {
   gap: 5px;
 }
 .four {
-  width: 70px;
+  width: 80px;
 }
 .last-price {
   display: inline-block;
   position: relative;
   padding: 0 10px;
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
 }
 .last-price::before {
   content: "";
   position: absolute;
 
-  left: 40px;
+  left: 45px;
   top: -20px;
-  transform: rotate(75deg);
-  height: 60px;
+  transform: rotate(80deg);
+  height: 75px;
   width: 2px;
   background-color: #fff;
 }
 .num {
   color: #eb8307;
+  font-size: 40px;
 }
 .new-price {
   display: flex;
 
-  width: 80%;
+  width: 100%;
   height: 10%;
-  font-size: x-large;
 
   justify-content: center;
   align-items: center;
@@ -147,8 +152,7 @@ small {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 15px;
-
+  padding-top: 10px;
   color: #eb8307;
   width: 85%;
   height: 13%;
@@ -167,3 +171,9 @@ small {
   color: #eb8307;
   background-color: black;
 }
+/*@media screen and (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}*/
