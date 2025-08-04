@@ -20,7 +20,7 @@ body {
 }
 .note {
   text-align: center;
-  width: 90%;
+  width: 95%;
   color: #fff;
   padding-top: 10px;
   background-color: #910909;
@@ -30,7 +30,7 @@ body {
 .info {
   display: flex;
   justify-content: space-evenly;
-  width: 90%;
+  width: 95%;
   background-color: rgba(29, 34, 45);
 
   border-radius: 20px;
@@ -41,7 +41,7 @@ body {
 #vip,
 #ship,
 .submarine {
-  height: 80%;
+  height: 70%;
   width: 20vw;
   border: 1px #eb8307;
   border-radius: 20px;
@@ -49,18 +49,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 #ship {
-  height: 70%;
+  height: 60%;
   gap: 15px;
+  padding-bottom: 40px;
 }
 #vip {
   position: relative;
 }
-#icon-one {
-  margin-top: 40px;
-}
+
 .suggest {
   justify-content: center;
   padding-top: 10px;
@@ -79,16 +78,22 @@ body {
   overflow: hidden;
   vertical-align: middle;
 }*/
-.icon,
-#icon-one,
-#icon {
-  height: 25%;
-  margin-top: 40px;
-  width: 40%;
+.icon img {
+  height: 80%;
+  margin-top: 35px;
+  width: 75%;
 }
-#icon {
-  margin-top: 60px;
-  height: 30%;
+#icon img {
+  height: 70%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 65%;
+}
+#icon-one img {
+  height: 75%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 70%;
 }
 small {
   color: gray;
@@ -100,7 +105,7 @@ strong {
 .time {
   background-color: rgb(21, 25, 34);
   border-radius: 30px;
-  height: 40px;
+  height: 45px;
   width: 80px;
   color: white;
   font-size: 20px;
@@ -110,10 +115,9 @@ strong {
   justify-content: center;
   display: flex;
   gap: 5px;
+  margin-top: 10px;
 }
-.four {
-  width: 80px;
-}
+
 .last-price {
   display: inline-block;
   position: relative;
@@ -134,21 +138,25 @@ strong {
 }
 .num {
   color: #eb8307;
-  font-size: 40px;
+  font-size: 50px;
 }
-.new-price {
+.new-price,
+.price {
   display: flex;
 
   width: 100%;
   height: 10%;
-
+  font-size: 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
+
 .buy,
-#buy {
+#buy,
+#buy-four {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -158,6 +166,16 @@ strong {
   height: 13%;
   border-radius: 15px;
   border: 2px solid #eb8307;
+}
+#buy-four {
+  height: 50%;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#buy-four:hover {
+  background-color: #eb8307;
+  color: #fff;
 }
 .buy:hover {
   background-color: #eb8307;
@@ -171,31 +189,74 @@ strong {
   color: #eb8307;
   background-color: black;
 }
-@media screen and(min-width: 600px) {
-  body {
-    color: #f70707;
-  }
-}
+@media screen and (max-width: 600px) {
+  .info {
+    flex-wrap: wrap;
 
-@media screen and (max-width: 1600px) {
-  body {
-    color: aqua;
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
   }
-}
-/*@media screen and (max-width:1340px) {
-  .item_body_widget .cover img{
-    height: 230px
-  }
-}
-@media screen and (max-width:1140px) {
-  .home_update_series .body .item_body_widget {
+
+  .helicopter,
+  #vip,
+  #ship,
+  .submarine {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
-    width: calc(16% - 10px);
   }
-  .home_update_series .body .item_body_widget:nth-last-child(-n+2){
-    display: none;
+  .last-price {
+    font-size: 30px;
+  }
+  #ship {
+    height: 50%;
+  }
+  .price {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+  .icon,
+  #icon-one,
+  #icon {
+    margin-top: 30px;
+
+    margin-left: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .icon img,
+  #icon img,
+  #icon-one img {
+    width: 65px;
+    height: 60px;
+
+    margin-left: 50%;
+  }
+
+  .time {
+    width: 85px;
+    height: 50px;
+    margin-top: -75px;
+    margin-right: -100px;
+  }
+
+  .suggest {
+    padding-bottom: 30px;
+    left: 30%;
+  }
+  .buy,
+  #buy {
+    margin-bottom: 10px;
+    height: 50px;
   }
 }
-
-@media screen and (max-width:1000px) {
-  .home_update_series .body .item_body_widget }*/
