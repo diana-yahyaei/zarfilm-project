@@ -171,9 +171,31 @@ strong {
   color: #eb8307;
   background-color: black;
 }
-/*@media screen and (max-width: 600px) {
+@media screen and(min-width: 600px) {
   body {
-    display: flex;
-    flex-direction: column;
+    color: #f70707;
   }
-}*/
+}
+
+@media screen and (max-width: 1600px) {
+  body {
+    color: aqua;
+  }
+}
+/*@media screen and (max-width:1340px) {
+  .item_body_widget .cover img{
+    height: 230px
+  }
+}
+@media screen and (max-width:1140px) {
+  .home_update_series .body .item_body_widget {
+    margin-bottom: 15px;
+    width: calc(16% - 10px);
+  }
+  .home_update_series .body .item_body_widget:nth-last-child(-n+2){
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .home_update_series .body .item_body_widget }*/
